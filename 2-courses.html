@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>SmileSchool</title>
+    </head>
+    <body>
+        <header class="container-fluid bg-img3">
+            <div class="container-lg">
+                <nav class="d-flex flex-sm-row flex-column pt-4">
+                    <div class="d-flex align-items-center flex-sm-row flex-column col-sm-6">
+                        <img class="m-2" src="images/smile_off.png" height="30px">
+                        <img class="m-2" src="images/logo.png" height="30px">
+                    </div>
+                    <button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse"
+                        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="nav burger">
+                        <span class="nav-burger"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-sm-flex col-sm-6" id="navbarNav">
+                        <ul class="navbar-nav text-uppercase ml-auto align-items-center flex-sm-row font-weight-bold">
+                            <li class="nav-item"><a class="nav-link active-link text-white mx-3" href="courses.html">Courses</a></li>
+                            <li class="nav-item"><a class="nav-link text-white mx-3" href="pricing.html">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link text-white mx-3" href="#login">Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="position-relative pb-5 pt-4">
+                    <h1 class="display-5 font-weight-bold text-center d-none d-sm-block coiny-quote text-white">« Don't cry because it's over.<br><span class="text-purple">Smile</span> because it happened. »</h1>
+                </div>
+            </div>
+        </header>
+            <form class="container-fluid bg-color-purple p-5">
+                <div class="row">
+                <div class="col">
+                    <label class="float-left text-white" for="search">KEYWORDS</label>
+                    <input type="text" class="form-control text-white" placeholder="Search by keywords">
+                </div>
+                <div class="col">
+                    <label class="float-left text-white" for="topic">TOPIC</label>
+                    <select class="form-control text-white" id="topic">
+                    <option class="bg-white text-body">Novice</option>
+                    <option class="bg-white text-body">Intermediate</option>
+                    <option class="bg-white text-body">Expert</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="float-left text-white" for="sort">SORT BY</label>
+                    <select class="form-control text-white" id="sort">
+                    <option class="bg-white text-body">Most Popular</option>
+                    <option class="bg-white text-body">Most Recent</option>
+                    <option class="bg-white text-body">Most Viewed</option>
+                    </select>
+                </div>
+                </div>
+            </form>
+        </div>
+        <section class="container-fluid bg-white">
+            <div class="container-lg flex-wrap flex-row d-flex">
+                <div>
+                    <p class="text-secondary py-5">11 videos</p>
+                </div>
+                <div class="row">
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_4.jpg" alt="thumbnail">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Diagonal Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_3.jpg" alt="thumbnail">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Sad Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_1.jpg">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_2.jpg">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Happy Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_4.jpg">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Diagonal Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_3.jpg">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Sad Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_1.jpg">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_2.jpg">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Happy Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_4.jpg">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Diagonal Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_3.jpg">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Sad Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 col-lg-3 border-0">
+                        <img class="card-img-top" src="images/thumbnail_1.jpg">
+                        <div class="card-body d-block">
+                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="row">
+                                <img class="rounded-circle ml-3" src="images/profile_1.jpg" height="25px">
+                                <img class="card-img-overlay playbutton mx-auto" src="images/play.png">
+                                <p class="text-purple ml-3">Phillip Massey</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <p class="text-nowrap">
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-purple"></span>
+                                        <span class="holberton_school-icon-star text-secondary"></span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="text-purple text-nowrap ml-4">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

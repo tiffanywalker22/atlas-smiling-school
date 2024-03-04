@@ -1,0 +1,141 @@
+/* Import */
+@import url("./holberton_school-icon/style.css");
+
+/* Variables */
+:root {
+  --sans: "Source Sans Pro", serif;
+  --coiny: "Coiny", sans-serif;
+  --navy: #071629;
+  --white: #ffffff;
+  --purple: #C271FF;
+  --purple-light: #D296FF;
+}
+
+/* Background Images */
+.bg-img1, .bg-img2, .bg-img3 {
+  background: var(--navy) no-repeat center top/cover;
+  margin: 0;
+}
+
+.bg-img1 { background-image: url('images/pic_1.jpg'); }
+.bg-img2 { background-image: url('images/pic_2.jpg'); }
+.bg-img3 { background-image: url('images/pic_3.jpg'); }
+
+.coiny-quote {
+  font-family: var(--coiny);
+}
+
+/* Links and Navigation */
+li a:hover, li a:focus, .active-link {
+  color: var(--purple);
+}
+
+.active-link {
+  border-bottom: 2px solid var(--white);
+}
+
+.large {
+  font-size: 1.75rem;
+}
+
+.btn {
+  background: var(--purple);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+}
+
+.btn:hover, .btn:focus {
+  opacity: 0.9;
+}
+
+/* Navigation */
+.nav-burger::before {
+  font-family: 'holberton_school-icon';
+  content: "\e911";
+  color: var(--white);
+  font-size: 2rem;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  min-width: 100%;
+}
+
+.dropdown-item:hover {
+  color: var(--purple);
+  background-color: var(--white);
+}
+
+.dropdown-toggle {
+  border-radius: 0.5rem 0 0.5rem 0;
+  border-bottom: 1px solid var(--purple-light);
+  background-color: var(--purple-light);
+}
+
+/* Form Controls */
+::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.form-control {
+  border-radius: 0.5rem 0 0 0;
+  border-bottom: 1px solid var(--purple-light);
+  background-color: var(--purple-light);
+}
+
+.form-control:hover, .form-control:active, .form-control:focus {
+  background-color: var(--purple-light);
+}
+
+header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Text and Background Colors */
+.text-purple {
+  color: var(--purple);
+}
+
+.bg-color-purple {
+  background-color: var(--purple);
+}
+
+.bg-color-purp-light {
+  background-color: var(--purple-light);
+}
+
+.bg-black {
+  background-color: var(--navy);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.playbutton {
+  width: 35%;
+  padding-top: 15%;
+}
+
+/* Mobile and Tablets */
+@media screen and (max-width: 575px) {
+  .imgbg1 {
+    background: var(--navy) center top/100vw;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+  .bg-img1 {
+    background-size: auto;
+  }
+}
